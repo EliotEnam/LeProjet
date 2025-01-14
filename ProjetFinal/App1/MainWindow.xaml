@@ -1,0 +1,31 @@
+﻿<Window
+    x:Class="App1.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#212a31"  >
+        <NavigationView PaneTitle="Menu" IsBackButtonVisible="Collapsed" IsSettingsVisible="False" SelectionChanged="NavigationView_SelectionChanged" Foreground="White" x:Name="nav">
+            <NavigationView.MenuItems>
+                <NavigationViewItemHeader Content="Pages" Foreground="White"/>
+                <NavigationViewItem Content="Activitées" x:Name="Activite" Icon="List" Foreground="White" Tag="Activ"/>
+                <NavigationViewItem Content="Adhérents" x:Name="Adherent" Icon="People" Foreground="White"/>
+                <NavigationViewItem Content="Sceance" x:Name="Sceance" Icon="Caption" Foreground="White"/>
+                <NavigationViewItem Content="Statistiques" x:Name="Stat" Icon="Shop" Foreground="White"/>
+                <NavigationViewItem Content="Accueil" x:Name="Accueil" Icon="Zoom" Foreground="White" Tag="Accueil"/>
+                <NavigationViewItem Content="Mes scéances" x:Name="MesSceances" Icon="Zoom" Foreground="White"/>
+                
+            </NavigationView.MenuItems>
+
+            <Frame x:Name="mainFrame" />
+            <NavigationView.FooterMenuItems>
+                <NavigationViewItem Content="Compte" Icon="Contact" x:Name="compte" Foreground="White"/>
+                <NavigationViewItem Content="Se connecter" Icon="Contact" x:Name="connexion" Foreground="White" Tag="connect"/>
+                <NavigationViewItem Content="Deconnexion" Tag="SamplePage5" Icon="DisconnectDrive" x:Name="deconnexion" Foreground="White"/>
+            </NavigationView.FooterMenuItems>
+        </NavigationView>
+    </Grid>
+</Window>
