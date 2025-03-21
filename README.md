@@ -1,1 +1,2 @@
-WinUi-> nom:admin, mot de passe:admin
+# WinUi->
+Administrateur: nom:admin, mot de passe:admin
