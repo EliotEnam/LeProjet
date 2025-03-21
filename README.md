@@ -1,2 +1,7 @@
-# WinUi->
-Administrateur: nom:admin, mot de passe:admin
+# WinUi
+
+## Administrateur  
+
+- **Nom** : `admin`  
+- **Mot de passe** : `admin`
+
